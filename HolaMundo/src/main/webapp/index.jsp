@@ -14,6 +14,22 @@ pageEncoding="ISO-8859-1"%>
 		<h3>
 			<a href="hola?name=Fede">Click Here</a>
 		</h3>
+		<br>
+		<br>
+		<form action="hola">
+		<div>
+		Nombre: <input type="text" name="name"><br>
+		</div>
+		<br>
+		<div>
+		Mensaje: <textarea rows="4" cols="50" name="message"></textarea><br>
+		</div>
+		<h3>
+			<input type="submit" value="Enviar"/>
+		</h3>
+		</form>
 	</center>
+	
+	
 </body>
 </html>

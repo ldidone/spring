@@ -7,11 +7,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HolaMundoController {
-	String message = "Bienvenido a Spring MVC!";
 	 
 	@RequestMapping("/hola")
 	public ModelAndView showMessage(
-			@RequestParam(value = "name", required = false, defaultValue = "Mundo") String name) {
+			@RequestParam(value = "name", required = false, defaultValue = "Mundo") String name,
+			@RequestParam(value = "message", required = false, defaultValue = "Aqui estamos para vivir") String message) {
 		System.out.println("en el controlador");
  
 		ModelAndView mv = new ModelAndView("holamundo");
