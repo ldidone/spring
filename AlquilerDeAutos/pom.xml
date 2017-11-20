@@ -39,12 +39,72 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-
+		<!-- Hibernate -->
+		<dependency>
+		<groupId>org.hibernate</groupId>
+		  <artifactId>hibernate-core</artifactId>
+		  <version>4.0.1.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>3.4.0.GA</version>
+		</dependency>		
+		<!-- Apache Commons DBCP -->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!-- Spring ORM -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>				
+		<!-- AspectJ -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.7.4</version>
+		</dependency>	
+		<!-- @Inject -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>										
+		<!-- Servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-jdbc</artifactId>
+    		<version>3.0.4.RELEASE</version>
+		</dependency>
+		<dependency>
+    		<groupId>mysql</groupId>
+    		<artifactId>mysql-connector-java</artifactId>
+    		<version>5.1.6</version>
+		</dependency>		
 	</dependencies>
-
 	<build>
 		<finalName>AlquilerDeAutos</finalName>
-
 		<plugins>
 		    <!-- Eclipse project -->
 		  <plugin>
@@ -58,8 +118,7 @@
 				<!-- Avoid type mvn eclipse:eclipse -Dwtpversion=2.0 -->
 				<wtpversion>2.0</wtpversion>
 			</configuration>
-		  </plugin>
-
+		  </plugin>		  
 		  <!-- For Maven Tomcat Plugin -->
 		  <plugin>
 			<groupId>org.apache.tomcat.maven</groupId>
@@ -69,7 +128,18 @@
 				<path>/AlquilerDeAutos</path>
 			</configuration>
 		  </plugin>
-
+		  
+		  <!-- For Maven Compile -->
+		  <plugin>
+		  	<groupId>org.apache.maven.plugins</groupId>
+		  	<artifactId>maven-compiler-plugin</artifactId>
+		  	<version>3.1</version>
+		  	<configuration>
+		  		<source>1.7</source>
+		  		<target>1.7</target>
+		  	</configuration>
+		  </plugin>
+		  
 		</plugins>
 
 	</build>

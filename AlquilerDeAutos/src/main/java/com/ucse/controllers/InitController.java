@@ -1,4 +1,6 @@
-package com.ucse;
+package com.ucse.controllers;
+
+import javax.security.auth.message.callback.PrivateKeyCallback.Request;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +21,7 @@ public class InitController {
 			@RequestParam(value = "user", required = true) String user,
 			@RequestParam(value = "password", required = true) String password) {
 		ModelAndView mv = new ModelAndView("main");
+		mv.addObject("name", user);
 		return mv;
 	}
 	

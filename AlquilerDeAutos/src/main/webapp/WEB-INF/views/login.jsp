@@ -13,7 +13,7 @@
 		</div>
 		<br>
 		<div class="login">
-		<label class="password">Password: </label><input type="text" name="password"><br>
+		<label class="password">Password: </label><input type="password" name="password"><br>
 		</div>
 		<h3>
 			<input type="submit" value="Enviar"/>
