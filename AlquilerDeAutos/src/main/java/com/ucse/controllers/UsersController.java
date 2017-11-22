@@ -10,11 +10,12 @@ import com.ucse.model.User;
 import com.ucse.services.UsersService;
 
 @Controller
-public class UserController {
+public class UsersController {
 	@Autowired
 	private UsersService usersService;
-	
-	
+	public void setUserService(UsersService usersService) {
+		this.usersService = usersService;
+	}	
 	@RequestMapping("/crear")
 	public ModelAndView crear() {
 		/*ModelAndView mv = new ModelAndView("ViewCrearUsuario");

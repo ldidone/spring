@@ -41,15 +41,15 @@
 		</dependency>
 		<!-- Hibernate -->
 		<dependency>
-		<groupId>org.hibernate</groupId>
-		  <artifactId>hibernate-core</artifactId>
-		  <version>4.0.1.Final</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.3.11.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
-			<version>3.4.0.GA</version>
-		</dependency>		
+			<version>4.3.11.Final</version>
+		</dependency>
 		<!-- Apache Commons DBCP -->
 		<dependency>
 			<groupId>commons-dbcp</groupId>

@@ -12,7 +12,7 @@ import com.ucse.model.User;
 public class UserDao {
 	private SessionFactory sessionFactory;
 	
-	public void setSessionfactory(SessionFactory sf)
+	public void setSessionFactory(SessionFactory sf)
 	{
 		this.sessionFactory = sf;
 	}
